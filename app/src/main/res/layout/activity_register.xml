@@ -4,6 +4,190 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_register">
+    android:background="#0A1625"
+    android:padding="16dp">
+
+    <!-- LOGO -->
+    <!-- Substitua pelo logo real -->
+    android:contentDescription="Logo Nazasul"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintTop_margin="80dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- NOME COMPLETO -->
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="174dp"
+        android:layout_height="309dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/nameField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="131dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF753A"
+        android:text="CADASTRAR"
+        android:textColor="#0A1625"
+        android:textSize="16sp"
+        app:cornerRadius="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="32dp"
+        app:layout_constraintTop_toBottomOf="@id/passwordField" />
+
+    <LinearLayout
+        android:id="@+id/emailField"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/Email"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameField">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:background="#FF753A"
+            android:contentDescription="Email Icon"
+            android:padding="10dp"
+            android:src="@drawable/Email" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:hint="email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="#C1C1C1" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Esqueceu sua senha?"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnCadastrar" />
+
+    <LinearLayout
+        android:id="@+id/passwordField"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_field_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailField">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:background="#FF753A"
+            android:contentDescription="Lock Icon"
+            android:padding="10dp"
+            android:src="@drawable/cadeado" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:hint="Escolha uma senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="#C1C1C1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nameField"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_field_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_margin="64dp"
+        app:layout_constraintTop_toBottomOf="@id/logoImage">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:background="#FF753A"
+            android:contentDescription="User Icon"
+            android:padding="10dp"
+            android:src="@drawable/iconeuser" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:hint="Nome completo"
+            android:padding="12dp"
+            android:textColorHint="#C1C1C1" />
+    </LinearLayout>
+
+    <!-- EMAIL -->
+
+    <!-- SENHA -->
+
+    <!-- BOTÃO ENTRAR -->
+
+    <!-- Esqueceu senha -->
+
+    <!-- Já possui cadastro? -->
+    <TextView
+        android:id="@+id/txtJaTemCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já possui cadastro?"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_margin="4dp"
+        app:layout_constraintBottom_toTopOf="@id/btnLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- BOTÃO LOGIN -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="112dp"
+        android:layout_height="28dp"
+        android:background="@drawable/outline_button"
+        android:text="Entrar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_margin="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

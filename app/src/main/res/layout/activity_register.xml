@@ -34,7 +34,7 @@
         android:layout_width="131dp"
         android:layout_height="51dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#FF753A"
+        android:backgroundTint="#FF5722"
         android:text="CADASTRAR"
         android:textColor="#0A1625"
         android:textSize="16sp"
@@ -61,7 +61,7 @@
         <ImageView
             android:layout_width="42dp"
             android:layout_height="match_parent"
-            android:background="#FF753A"
+            android:background="#FF5722"
             android:contentDescription="Email Icon"
             android:padding="10dp"
             android:src="@drawable/Email" />
@@ -107,7 +107,7 @@
         <ImageView
             android:layout_width="42dp"
             android:layout_height="match_parent"
-            android:background="#FF753A"
+            android:background="#FF5722"
             android:contentDescription="Lock Icon"
             android:padding="10dp"
             android:src="@drawable/cadeado" />
@@ -140,7 +140,7 @@
         <ImageView
             android:layout_width="42dp"
             android:layout_height="match_parent"
-            android:background="#FF753A"
+            android:background="#FF5722"
             android:contentDescription="User Icon"
             android:padding="10dp"
             android:src="@drawable/iconeuser" />
@@ -181,7 +181,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="112dp"
         android:layout_height="28dp"
-        android:background="@drawable/outline_button"
+        android:background="@drawable/bordercadastre"
         android:text="Entrar"
         android:textColor="#FFFFFF"
         android:textSize="16sp"

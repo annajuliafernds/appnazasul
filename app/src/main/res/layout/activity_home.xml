@@ -136,7 +136,7 @@
             <View
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/Ellipse7"
+                android:background="@drawable/ellipse7"
                 android:layout_marginBottom="6dp" />
 
             <TextView
@@ -159,7 +159,7 @@
             <View
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/Ellipse7"
+                android:background="@drawable/ellipse7"
                 android:layout_marginBottom="6dp" />
 
             <TextView
@@ -182,7 +182,7 @@
             <View
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/Ellipse7"
+                android:background="@drawable/ellipse7"
                 android:layout_marginBottom="6dp" />
 
             <TextView
@@ -205,7 +205,7 @@
             <View
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/Ellipse7"
+                android:background="@drawable/ellipse7"
                 android:layout_marginBottom="6dp" />
 
             <TextView
